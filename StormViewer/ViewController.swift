@@ -31,5 +31,10 @@ class ViewController: UITableViewController {
 		return pictures.count
 	}
 
+	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
+		cell.textLabel?.text = pictures[indexPath.row]
+		return cell
+	}
 }
 
