@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA74F58A261120E400A8DBB7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA74F589261120E400A8DBB7 /* README.md */; };
 		DAF9514D260FD81100841EB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9514C260FD81100841EB2 /* AppDelegate.swift */; };
 		DAF9514F260FD81100841EB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9514E260FD81100841EB2 /* SceneDelegate.swift */; };
 		DAF95151260FD81100841EB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF95150260FD81100841EB2 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA74F589261120E400A8DBB7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DAF95149260FD81100841EB2 /* StormViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StormViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF9514C260FD81100841EB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAF9514E260FD81100841EB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		DAF95140260FD81100841EB2 = {
 			isa = PBXGroup;
 			children = (
+				DA74F589261120E400A8DBB7 /* README.md */,
 				DAF9514B260FD81100841EB2 /* StormViewer */,
 				DAF9514A260FD81100841EB2 /* Products */,
 			);
@@ -172,6 +175,7 @@
 				DAF95171260FD93D00841EB2 /* nssl0041.jpg in Resources */,
 				DAF95172260FD93D00841EB2 /* nssl0042.jpg in Resources */,
 				DAF95159260FD81300841EB2 /* LaunchScreen.storyboard in Resources */,
+				DA74F58A261120E400A8DBB7 /* README.md in Resources */,
 				DAF95156260FD81300841EB2 /* Assets.xcassets in Resources */,
 				DAF9516F260FD93D00841EB2 /* nssl0045.jpg in Resources */,
 				DAF95154260FD81100841EB2 /* Main.storyboard in Resources */,

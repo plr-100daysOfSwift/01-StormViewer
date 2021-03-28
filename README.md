@@ -1,2 +1,3 @@
-# 01-StormViewer
-Project 1
+# StormViewer
+Hacking with Swift: 100 Days of Swift - Project 1
+
