@@ -16,7 +16,7 @@ class DetailViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		title = selectedImage
+		title = "Picture \(numbers?.current ?? 0) of \(numbers?.total ?? 0)"
 		navigationItem.largeTitleDisplayMode = .never
 
 		if let imageToLoad = selectedImage {
