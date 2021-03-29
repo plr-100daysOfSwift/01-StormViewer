@@ -11,6 +11,7 @@ class DetailViewController: UIViewController {
 
 	@IBOutlet var imageView: UIImageView!
 	var selectedImage: String?
+	var numbers: (current: Int, total: Int)?
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
