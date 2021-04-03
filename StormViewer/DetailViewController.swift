@@ -17,6 +17,9 @@ class DetailViewController: UIViewController {
 		super.viewDidLoad()
 
 		title = "Picture \((numbers?.row ?? 0) + 1) of \(numbers?.total ?? 0)"
+		navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action,
+																												target: self,
+																												action: #selector(shareTapped))
 		navigationItem.largeTitleDisplayMode = .never
 
 		if let imageToLoad = selectedImage {
@@ -34,4 +37,7 @@ class DetailViewController: UIViewController {
 		navigationController?.hidesBarsOnTap = false
 	}
 
+	@objc func shareTapped() {
+		// more code here
+	}
 }
