@@ -15,6 +15,7 @@ class ViewController: UITableViewController {
 		super.viewDidLoad()
 
 		title = "Storm Viewer"
+		navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(recommendApp))
 		navigationController?.navigationBar.prefersLargeTitles = true
 
 		let fm = FileManager.default
