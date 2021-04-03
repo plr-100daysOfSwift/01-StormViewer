@@ -50,5 +50,12 @@ class ViewController: UITableViewController {
 			navigationController?.pushViewController(vc, animated: true)
 		}
 	}
+
+	@objc func recommendApp() {
+		let url = URL(string: "https://www.stormviewer.com")!
+		let vc = UIActivityViewController(activityItems: [url], applicationActivities: [])
+		vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+		present(vc, animated: true)
+	}
 }
 
