@@ -17,6 +17,11 @@ class ViewController: UITableViewController {
 		title = "Storm Viewer"
 		navigationController?.navigationBar.prefersLargeTitles = true
 
+		performSelector(inBackground: #selector(loadImages), with: nil)
+
+	}
+
+	@objc fileprivate func loadImages() {
 		let fm = FileManager.default
 		let path = Bundle.main.resourcePath!
 		let items = try! fm.contentsOfDirectory(atPath: path)
@@ -27,8 +32,10 @@ class ViewController: UITableViewController {
 			}
 		}
 		pictures = pictures.sorted()
-		print(pictures)
-
+		
+		DispatchQueue.main.async { [weak self] in
+			self?.tableView.reloadData()
+		}
 	}
 
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
