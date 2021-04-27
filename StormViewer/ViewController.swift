@@ -31,7 +31,7 @@ class ViewController: UICollectionViewController {
 
 	}
 
-	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return pictures.count
 	}
 
