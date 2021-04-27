@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DA74F58A261120E400A8DBB7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA74F589261120E400A8DBB7 /* README.md */; };
 		DA74F59626113CE500A8DBB7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74F59526113CE500A8DBB7 /* DetailViewController.swift */; };
+		DA86052C2638D90100328DB0 /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86052B2638D90100328DB0 /* PictureCell.swift */; };
 		DAF9514D260FD81100841EB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9514C260FD81100841EB2 /* AppDelegate.swift */; };
 		DAF9514F260FD81100841EB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9514E260FD81100841EB2 /* SceneDelegate.swift */; };
 		DAF95151260FD81100841EB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF95150260FD81100841EB2 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		DA74F589261120E400A8DBB7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA74F59526113CE500A8DBB7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DA86052B2638D90100328DB0 /* PictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
 		DAF95149260FD81100841EB2 /* StormViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StormViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF9514C260FD81100841EB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAF9514E260FD81100841EB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				DAF9514C260FD81100841EB2 /* AppDelegate.swift */,
 				DAF9514E260FD81100841EB2 /* SceneDelegate.swift */,
 				DAF95150260FD81100841EB2 /* ViewController.swift */,
+				DA86052B2638D90100328DB0 /* PictureCell.swift */,
 				DA74F59526113CE500A8DBB7 /* DetailViewController.swift */,
 				DAF95152260FD81100841EB2 /* Main.storyboard */,
 				DAF95155260FD81300841EB2 /* Assets.xcassets */,
@@ -194,6 +197,7 @@
 			files = (
 				DAF95151260FD81100841EB2 /* ViewController.swift in Sources */,
 				DAF9514D260FD81100841EB2 /* AppDelegate.swift in Sources */,
+				DA86052C2638D90100328DB0 /* PictureCell.swift in Sources */,
 				DAF9514F260FD81100841EB2 /* SceneDelegate.swift in Sources */,
 				DA74F59626113CE500A8DBB7 /* DetailViewController.swift in Sources */,
 			);
