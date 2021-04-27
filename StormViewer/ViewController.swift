@@ -42,7 +42,7 @@ class ViewController: UICollectionViewController {
 		return cell
 	}
 
-	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+	override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		if let vc = storyboard?.instantiateViewController(identifier: "Detail") as? DetailViewController {
 			vc.selectedImage = pictures[indexPath.row]
 			vc.numbers = (indexPath.row, pictures.count)
