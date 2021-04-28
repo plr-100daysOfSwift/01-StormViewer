@@ -35,10 +35,12 @@ class ViewController: UICollectionViewController {
 		return pictures.count
 	}
 
-	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
-		cell.textLabel?.text = "Picture \(indexPath.row + 1) of \(pictures.count)"
-		cell.detailTextLabel?.text = pictures[indexPath.row]
+	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Picture", for: indexPath) as? PictureCell else {
+			fatalError("Unable to dequeue picture cell.")
+		}
+		cell.title?.text = "Picture \(indexPath.row + 1)/\(pictures.count)"
+		cell.detail?.text = pictures[indexPath.row]
 		return cell
 	}
 
@@ -49,5 +51,6 @@ class ViewController: UICollectionViewController {
 			navigationController?.pushViewController(vc, animated: true)
 		}
 	}
+
 }
 
