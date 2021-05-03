@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UITableViewController {
 
+	let defaults = UserDefaults.standard
+
 	var pictures = [String]()
 	var viewCounts = [String: Int]()
 
@@ -28,7 +30,10 @@ class ViewController: UITableViewController {
 			}
 		}
 		pictures = pictures.sorted()
-		print(pictures)
+
+		if let viewCounts = defaults.object(forKey: "ViewCounts") as? [String : Int] {
+			self.viewCounts = viewCounts
+		}
 
 	}
 
