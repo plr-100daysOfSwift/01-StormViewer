@@ -53,7 +53,13 @@ class ViewController: UITableViewController {
 
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		if let vc = storyboard?.instantiateViewController(identifier: "Detail") as? DetailViewController {
-			vc.selectedImage = pictures[indexPath.row]
+
+			let picture = pictures[indexPath.row]
+			viewCounts[picture] = (viewCounts[picture] ?? 0) + 1
+			defaults.set(viewCounts, forKey: "ViewCounts")
+			tableView.reloadRows(at: [indexPath], with: .automatic)
+
+			vc.selectedImage = picture
 			vc.numbers = (indexPath.row, pictures.count)
 			navigationController?.pushViewController(vc, animated: true)
 		}
