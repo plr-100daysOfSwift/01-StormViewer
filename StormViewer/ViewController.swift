@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UITableViewController {
 
 	var pictures = [String]()
+	var viewCounts = [String: Int]()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
