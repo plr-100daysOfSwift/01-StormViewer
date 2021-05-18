@@ -19,6 +19,8 @@ class DetailViewController: UIViewController {
 		title = "Picture \((numbers?.row ?? 0) + 1) of \(numbers?.total ?? 0)"
 		navigationItem.largeTitleDisplayMode = .never
 
+//		Project 18 - Challenge 2
+		assert(selectedImage != nil, "selectedImage is passed in at instantiation and should always have a value.")
 		if let imageToLoad = selectedImage {
 			imageView.image = UIImage(named: imageToLoad)
 		}
