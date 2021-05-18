@@ -43,6 +43,8 @@ class ViewController: UITableViewController {
 	}
 
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//		Project 18 - Challenge 1
+//		if let vc = storyboard?.instantiateViewController(identifier: "Bad") as? DetailViewController {
 		if let vc = storyboard?.instantiateViewController(identifier: "Detail") as? DetailViewController {
 			vc.selectedImage = pictures[indexPath.row]
 			vc.numbers = (indexPath.row, pictures.count)
