@@ -43,7 +43,7 @@ class DetailViewController: UIViewController {
 			return
 		}
 
-		let vc = UIActivityViewController(activityItems: [image, selectedImage], applicationActivities: [])
+		let vc = UIActivityViewController(activityItems: [image, selectedImage as Any], applicationActivities: [])
 		vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
 		present(vc, animated: true)
 	}
